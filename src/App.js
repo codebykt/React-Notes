@@ -11,8 +11,8 @@ export default function App() {
       <Navbar />
       <AddNotes notes={notes} AddNote={AddNote} />
       <h2>Notes</h2>
-      {notes.map((note) => {
-        return <NotesLogs title={note.title} description={note.description} />;
+      {notes.map(( note,index) => {
+        return <NotesLogs index={index} title={note.title} description={note.description} />;
       })}
     </>
   );

@@ -3,23 +3,23 @@ export default function NotesLogs(props) {
 
   return (
     <>
-      <div>
+      <div key={props.index}>
         <hr />
-          <h3>
-            <strong>
-              Title :
-              <br />
-              {props.title}
-            </strong>
-          </h3>
-          <br />
-          <p>
-            <strong>
-              Description:
-              <br />
-              {props.description}
-            </strong>
-          </p>
+        <p>
+          <strong>
+            Title :
+            <br />
+          </strong>
+          {props.title}
+        </p>
+
+        <p>
+          <strong>
+            Description:
+            <br />
+          </strong>
+          {props.description}
+        </p>
       </div>
     </>
   );
